@@ -22,11 +22,4 @@ scripts - скрипты, используемые в проекте, в осн�
 ### 5. Запуск
 `$ yarn start`
 
-`$ npx hardhat ignition deploy ignition/modules/Factory.js --network localhost`
 
-If you have previously deployed you may want to append `--reset` at the end:
-
-`$ npx hardhat ignition deploy ignition/modules/Factory.js --network localhost --reset`
-
-### 6. Запустить клиент
-`$ npm run dev`
