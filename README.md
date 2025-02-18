@@ -2,19 +2,31 @@
 Проект создан в процессе изучения блокчейна TON и языка Tact. Использовался как шпаргалка во время хакатона Hack a TON
 
 # Содержание
-contracts - source code of all the smart contracts of the project and their dependencies.
-wrappers - wrapper classes (implementing Contract from ton-core) for the contracts, including any deserialization primitives and compilation functions.
-tests - tests for the contracts.
-scripts - scripts used by the project, mainly the deployment scripts.
+contracts - исходный код всех смарт-контрактов проекта и их зависимостей.
+wrappers - классы-оболочки (реализующие контракт из ton-core) для контрактов, включая любые примитивы десериализации и функции компиляции.
+tests - тесты для контрактов.
+scripts - скрипты, используемые в проекте, в основном скрипты развертывания.
 
+## Установка
+### 1. Скачать репозиторий
 
-# How to use
+### 2. Установить зависимости:
+`$ yarn install`
 
-Build
-$'yarn build'
+### 3. Сборка
+`$ yarn build`
 
-Test
-$ 'yarn test'
+### 4. Тестирование 
+`$ yarn test`
 
-Deploy or run another script
-$ 'yarn start'
+### 5. Запуск
+`$ yarn start`
+
+`$ npx hardhat ignition deploy ignition/modules/Factory.js --network localhost`
+
+If you have previously deployed you may want to append `--reset` at the end:
+
+`$ npx hardhat ignition deploy ignition/modules/Factory.js --network localhost --reset`
+
+### 6. Запустить клиент
+`$ npm run dev`
